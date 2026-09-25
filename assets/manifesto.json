@@ -59,6 +59,24 @@
       "larguraQuadro": 120,
       "alturaQuadro": 256,
       "quadros": 2
+    },
+    "amigo_11": {
+      "arquivo": "sprites/amigo_11.webp",
+      "larguraQuadro": 189,
+      "alturaQuadro": 256,
+      "quadros": 2
+    },
+    "amigo_12": {
+      "arquivo": "sprites/amigo_12.webp",
+      "larguraQuadro": 165,
+      "alturaQuadro": 256,
+      "quadros": 2
+    },
+    "amigo_13": {
+      "arquivo": "sprites/amigo_13.webp",
+      "larguraQuadro": 250,
+      "alturaQuadro": 256,
+      "quadros": 2
     }
   },
   "fundos": {},
