@@ -167,6 +167,29 @@ Two versions of the same character side by side, in 2 equal cells, no line betwe
 Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. Reinterpret the pixel-art avatar in the attached screenshot as a character in the same hand-painted storybook style as the attached scene: a goofy bright green frog-like creature with huge round googly white eyes of slightly different sizes, glossy red lips, two little pointed ears on top of the head, a pointed yellow-green collar around the neck, a muscular green bodysuit, green trousers and green boots. Silly and lovable. Full body, 3/4 view facing left. Left cell: standing, googly-eyed and grinning. Right cell: the same creature waving. Same size and position in both cells.
 ```
 
+### D2 · amigos 11 a 13 (25/09) — [anexar estilo_amigos.png + o print do avatar]
+
+| Arquivo a gerar | Origem |
+|---|---|
+| `amigo_11.png` · **Letícia** | `leticia.png` (ruivo de bigode, terno bege) |
+| `amigo_12.png` · **Zayn** | `image.webp.png` (cartola com caveira, terno magenta) |
+| `amigo_13.png` · **Maya** | sem print: é um jacaré |
+
+**`amigo_11.png`**
+```
+Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. Reinterpret the pixel-art avatar in the attached screenshot as a character in the same hand-painted storybook style as the attached scene: a pale-skinned person with voluminous swept-back ginger red hair and a big bushy ginger handlebar mustache, sleepy half-closed eyes and a dry, unimpressed expression, wearing a loose beige tan suit with a matching jacket and trousers, an olive green scarf knotted loosely at the neck, and dark navy shoes. Old-timey explorer vibe, funny and charming. Full body, 3/4 view facing left. Left cell: standing, arms relaxed, deadpan look. Right cell: the same character waving. Same size and position in both cells.
+```
+
+**`amigo_12.png`**
+```
+Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. Reinterpret the pixel-art avatar in the attached screenshot as a character in the same hand-painted storybook style as the attached scene: a charismatic man with warm brown skin and shoulder-length dark hair, a tall black top hat with a dark blue band and a small white skull ornament on the front, a fitted magenta crimson suit, a necklace of ivory fang charms over the chest, brown and white shoes, and a thin purple walking cane with a golden handle. Sly, playful showman smile, like a mysterious New Orleans magician, fun and not scary. Full body, 3/4 view facing left. Left cell: standing, holding the cane, sly smile. Right cell: the same character tipping his top hat with a wave. Same size and position in both cells.
+```
+
+**`amigo_13.png`** (Maya virou jacaré em 25/09; o tubarão foi descartado)
+```
+Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. A cute friendly alligator character in the same hand-painted storybook style as the attached scene: a chubby swamp alligator standing upright on its hind legs like a person, olive and moss green bumpy back with a soft pale yellow belly, a long rounded snout with a big goofy happy grin showing small rounded teeth, big warm amber eyes, little rosy cheeks, short stubby arms and a thick curling tail behind. Adorable and huggable, a gentle bayou friend, not scary, no water. Full body, 3/4 view facing left. Left cell: standing upright, big happy grin. Right cell: the same alligator waving one little claw. Same size and position in both cells.
+```
+
 ---
 
 ## Música (opcional)
