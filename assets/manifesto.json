@@ -14,7 +14,7 @@
     },
     "amigo_3": {
       "arquivo": "sprites/amigo_3.webp",
-      "larguraQuadro": 179,
+      "larguraQuadro": 198,
       "alturaQuadro": 256,
       "quadros": 2
     },
@@ -26,13 +26,37 @@
     },
     "amigo_5": {
       "arquivo": "sprites/amigo_5.webp",
-      "larguraQuadro": 105,
+      "larguraQuadro": 119,
       "alturaQuadro": 256,
       "quadros": 2
     },
     "amigo_6": {
       "arquivo": "sprites/amigo_6.webp",
       "larguraQuadro": 155,
+      "alturaQuadro": 256,
+      "quadros": 2
+    },
+    "amigo_7": {
+      "arquivo": "sprites/amigo_7.webp",
+      "larguraQuadro": 145,
+      "alturaQuadro": 256,
+      "quadros": 2
+    },
+    "amigo_8": {
+      "arquivo": "sprites/amigo_8.webp",
+      "larguraQuadro": 154,
+      "alturaQuadro": 256,
+      "quadros": 2
+    },
+    "amigo_9": {
+      "arquivo": "sprites/amigo_9.webp",
+      "larguraQuadro": 129,
+      "alturaQuadro": 256,
+      "quadros": 2
+    },
+    "amigo_10": {
+      "arquivo": "sprites/amigo_10.webp",
+      "larguraQuadro": 120,
       "alturaQuadro": 256,
       "quadros": 2
     }
