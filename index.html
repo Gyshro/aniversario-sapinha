@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#0b1a22" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Do Esperminha à Princesa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Nunito:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-DQ-wKbOT.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-aZ4V-lX9.css">
+  </head>
+  <body>
+    <div id="jogo"></div>
+
+    <!-- Camada HTML por cima do canvas: texto nítido e botões de toque -->
+    <div id="camada">
+      <div id="legenda" class="legenda" hidden></div>
+
+      <div id="hud" class="hud" hidden>
+        <div class="hud-coracoes" id="hud-coracoes"></div>
+        <div class="hud-vagalumes"><span class="vaga-icone" aria-hidden="true"></span><span id="hud-vagalumes">0</span></div>
+      </div>
+
+      <div id="posicao" class="posicao" hidden>
+        <div class="posicao-trilho"><div class="posicao-barra" id="posicao-barra"></div></div>
+        <div class="posicao-num" id="posicao-num">12º</div>
+      </div>
+
+      <div id="controles" class="controles" hidden>
+        <div class="controles-esq">
+          <button class="btn-toque" data-tecla="esq" aria-label="Esquerda"><span class="seta seta-esq"></span></button>
+          <button class="btn-toque" data-tecla="dir" aria-label="Direita"><span class="seta seta-dir"></span></button>
+        </div>
+        <div class="controles-dir">
+          <button class="btn-toque btn-lingua" data-tecla="lingua" aria-label="Língua">Língua</button>
+          <button class="btn-toque btn-pulo" data-tecla="pulo" aria-label="Pular">Pular</button>
+        </div>
+      </div>
+
+      <div id="polaroid" class="polaroid" hidden>
+        <figure class="polaroid-cartao">
+          <div class="polaroid-foto" id="polaroid-foto"></div>
+          <figcaption id="polaroid-frase"></figcaption>
+        </figure>
+      </div>
+
+      <div id="fala" class="fala" hidden>
+        <div class="fala-nome" id="fala-nome"></div>
+        <p class="fala-texto" id="fala-texto"></p>
+        <div class="fala-rodape">
+          <span class="fala-contagem" id="fala-contagem"></span>
+          <button class="btn-seguir" id="fala-seguir">Próximo</button>
+        </div>
+      </div>
+
+      <div id="final" class="final" hidden>
+        <p class="final-texto" id="final-texto"></p>
+        <div class="final-botoes">
+          <button class="btn-seguir" id="final-rever">Rever as mensagens</button>
+          <button class="btn-seguir btn-sec" id="final-jogar">Jogar de novo</button>
+        </div>
+      </div>
+
+      <div id="toque" class="toque" hidden>toque para continuar</div>
+    </div>
+
+    <div id="girar" class="girar">
+      <div class="girar-celular" aria-hidden="true"></div>
+      <p>Vire o celular</p>
+    </div>
+
+  </body>
+</html>
