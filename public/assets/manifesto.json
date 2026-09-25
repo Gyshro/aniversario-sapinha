@@ -1,1 +1,42 @@
-{"sprites":{},"fundos":{},"audio":{}}
+{
+  "sprites": {
+    "amigo_1": {
+      "arquivo": "sprites/amigo_1.webp",
+      "larguraQuadro": 115,
+      "alturaQuadro": 256,
+      "quadros": 2
+    },
+    "amigo_2": {
+      "arquivo": "sprites/amigo_2.webp",
+      "larguraQuadro": 147,
+      "alturaQuadro": 256,
+      "quadros": 2
+    },
+    "amigo_3": {
+      "arquivo": "sprites/amigo_3.webp",
+      "larguraQuadro": 179,
+      "alturaQuadro": 256,
+      "quadros": 2
+    },
+    "amigo_4": {
+      "arquivo": "sprites/amigo_4.webp",
+      "larguraQuadro": 163,
+      "alturaQuadro": 256,
+      "quadros": 2
+    },
+    "amigo_5": {
+      "arquivo": "sprites/amigo_5.webp",
+      "larguraQuadro": 105,
+      "alturaQuadro": 256,
+      "quadros": 2
+    },
+    "amigo_6": {
+      "arquivo": "sprites/amigo_6.webp",
+      "larguraQuadro": 155,
+      "alturaQuadro": 256,
+      "quadros": 2
+    }
+  },
+  "fundos": {},
+  "audio": {}
+}

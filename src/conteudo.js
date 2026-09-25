@@ -37,11 +37,12 @@ export const LEMBRANCAS = [
 // sprite = nome da imagem do amigo em public/assets/sprites/ (sem extensão).
 // Enquanto não existir, aparece uma silhueta provisória.
 export const AMIGOS = [
-  { nome: 'Amigo 1', sprite: 'amigo_1', audio: null, texto: 'Mensagem do amigo 1.\nPode ter várias linhas.' },
-  { nome: 'Amiga 2', sprite: 'amigo_2', audio: null, texto: 'Mensagem da amiga 2.' },
-  { nome: 'Amigo 3', sprite: 'amigo_3', audio: null, texto: 'Mensagem do amigo 3.' },
-  { nome: 'Amiga 4', sprite: 'amigo_4', audio: null, texto: 'Mensagem da amiga 4.' },
-  { nome: 'Amigo 5', sprite: 'amigo_5', audio: null, texto: 'Mensagem do amigo 5.' },
+  { nome: 'Gi', sprite: 'amigo_1', audio: null, texto: 'Mensagem da Gi.\nPode ter várias linhas.' },
+  { nome: 'Richard', sprite: 'amigo_2', audio: null, texto: 'Mensagem do Richard.' },
+  { nome: 'Eliza', sprite: 'amigo_3', audio: null, texto: 'Mensagem da Eliza.' },
+  { nome: 'Max', sprite: 'amigo_4', audio: null, texto: 'Mensagem do Max.' },
+  { nome: 'Kaia', sprite: 'amigo_5', audio: null, texto: 'Mensagem da Kaia.' },
+  { nome: 'LP', sprite: 'amigo_6', audio: null, texto: 'Mensagem do LP.' },
 ];
 
 export const FINAL = {

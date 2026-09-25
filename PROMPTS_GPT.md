@@ -123,6 +123,50 @@ Single full-body character on a solid flat magenta #FF00FF background, no shadow
 Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. The person from the attached photo drawn in the same hand-painted storybook style as the attached scene, full body, 3/4 view facing left. Left cell: standing, friendly smile. Right cell: the same person waving. Same size and position in both cells.
 ```
 
+### D2 · os 6 amigos (avatares do Habbo, 25/09) — [anexar estilo_amigos.png + o print do avatar]
+
+Cada prompt descreve o avatar por escrito, para a arte não depender só de o gerador "ler" o
+print pixelado. Salve com o nome indicado.
+
+| Arquivo a gerar | Print de origem (Downloads) |
+|---|---|
+| `amigo_1.png` · **Gi** | `20260925_022806.jpg` (moça de rosa, chapéu de plumas) |
+| `amigo_2.png` · **Richard** | `Captura_de_tela_2026-09-24_220717.png` (fada verde com estrela) |
+| `amigo_3.png` · **Eliza** | `Captura_de_tela_2026-09-24_222137.png` (cobra verde) |
+| `amigo_4.png` · **Max** | `Captura_de_tela_2026-09-24_223902.png` (criatura branca peluda) |
+| `amigo_5.png` · **Kaia** | `image.png` (moça de turbante branco) |
+| `amigo_6.png` · **LP** | `w1X04gAAAAGSURBVAMAc9wMdymvA9sAAAAASUVORK5CYII.png` (sapo verde) |
+
+**`amigo_1.png`**
+```
+Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. Reinterpret the pixel-art avatar in the attached screenshot as a character in the same hand-painted storybook style as the attached scene: a young woman with light tan skin, green eyes and light brown hair tied in a low bun, wearing a 1920s flapper look all in pink: a pink cloche hat decorated with tall pink feathers, a big pink rose and a small golden fan ornament, a fluffy pink feather-boa sleeveless top, a long pink skirt and pink shoes. Elegant, slightly deadpan expression. Full body, 3/4 view facing left. Left cell: standing, a small confident smile. Right cell: the same character waving. Same size and position in both cells.
+```
+
+**`amigo_2.png`**
+```
+Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. Reinterpret the pixel-art avatar in the attached screenshot as a character in the same hand-painted storybook style as the attached scene: a cheerful green-skinned swamp fairy boy with a huge toothy grin, messy dark green hair crowned with moss and little leaves, an antenna headband topped by a glowing golden star, a striped green and brown sweater, a fluffy lime-green grass tutu, and one translucent fairy wing on his back. Full body, 3/4 view facing left. Left cell: standing, big grin. Right cell: the same character waving. Same size and position in both cells.
+```
+
+**`amigo_3.png`**
+```
+Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. Reinterpret the pixel-art avatar in the attached screenshot as a character in the same hand-painted storybook style as the attached scene: a chubby, friendly swamp snake with smooth moss-green scales and a lighter green belly, coiled in thick round loops with the tail curling out at the bottom, big red eyes and a small open mouth with a surprised, goofy look. Cute, not scary. Full body, 3/4 view facing left. Left cell: coiled and looking surprised. Right cell: the same snake happily waving the tip of its tail. Same size and position in both cells.
+```
+
+**`amigo_4.png`**
+```
+Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. Reinterpret the pixel-art avatar in the attached screenshot as a character in the same hand-painted storybook style as the attached scene: a mysterious, very fluffy all-white furry creature, like a small cuddly yeti, with a tall pointed white hood that curls at the tip like whipped cream, the face almost hidden behind a thick white fur collar, soft white fur everywhere and small white boots. Cozy and funny, not scary. Full body, 3/4 view facing left. Left cell: standing, only a hint of eyes peeking over the collar. Right cell: the same creature waving a fluffy paw. Same size and position in both cells.
+```
+
+**`amigo_5.png`**
+```
+Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. Reinterpret the pixel-art avatar in the attached screenshot as a character in the same hand-painted storybook style as the attached scene: a stylish woman with dark brown skin, a tall white turban headwrap, black sunglasses, large gold hoop earrings and a gold bracelet, a white dress with a green leaf print, a green and white patterned scarf over the shoulders, and white sandals. Glamorous and relaxed. Full body, 3/4 view facing left. Left cell: standing, a cool smile. Right cell: the same character waving. Same size and position in both cells.
+```
+
+**`amigo_6.png`**
+```
+Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. Reinterpret the pixel-art avatar in the attached screenshot as a character in the same hand-painted storybook style as the attached scene: a goofy bright green frog-like creature with huge round googly white eyes of slightly different sizes, glossy red lips, two little pointed ears on top of the head, a pointed yellow-green collar around the neck, a muscular green bodysuit, green trousers and green boots. Silly and lovable. Full body, 3/4 view facing left. Left cell: standing, googly-eyed and grinning. Right cell: the same creature waving. Same size and position in both cells.
+```
+
 ---
 
 ## Música (opcional)
