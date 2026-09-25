@@ -1,8 +1,8 @@
 import Phaser from 'phaser';
-import { LEMBRANCAS, AMIGOS, FINAL } from '../conteudo.js';
+import { LEMBRANCAS, AMIGOS, FINAL, EASTER_EGG } from '../conteudo.js';
 import { jornada } from '../jornada.js';
 import { som, tocarMusica } from '../som.js';
-import { legenda, limparLegenda, espera, esconderTudo, polaroid, fala, telaFinal } from '../ui.js';
+import { legenda, limparLegenda, espera, esconderTudo, polaroid, fala, telaFinal, easterEgg } from '../ui.js';
 import { escalaPara, QUADRO } from '../catalogo.js';
 import { parallax, clarao, estouro, texturaBrilho, toqueNaTela, vagalumesAmbiente, movimentoReduzido } from '../efeitos.js';
 
@@ -315,6 +315,11 @@ export class Rio extends Phaser.Scene {
     });
     // …e pra destruir completamente o clima
     this.time.delayedCall(4200, () => this.esperminhaIntrusa());
+    // e, depois de tudo, o easter egg (uma vez só)
+    if (!this.ovoMostrado) {
+      this.ovoMostrado = true;
+      this.time.delayedCall(7800, () => easterEgg(EASTER_EGG));
+    }
   }
 
   esperminhaIntrusa() {

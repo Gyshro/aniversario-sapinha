@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import { BREJO } from '../conteudo.js';
 import { jornada } from '../jornada.js';
-import { som, tocarMusica } from '../som.js';
+import { som, tocarMusica, pararPiano, tocarFaixa } from '../som.js';
 import { legenda, limparLegenda, esperarToque, espera, esconderTudo, mostrar, hudCoracoes, hudVagalumes, entrada, soltarControles } from '../ui.js';
 import { escalaPara, QUADRO } from '../catalogo.js';
 import { parallax, tremer, estouro, texturaBrilho, toqueNaTela, vagalumesAmbiente } from '../efeitos.js';
@@ -522,6 +522,9 @@ export class Brejo extends Phaser.Scene {
     await espera(1200);
     legenda(BREJO.fim);
     await esperarToque();
+    // passou do chefe: o piano sai e entra a musica.mp3, no toque (o iPhone exige)
+    pararPiano(2);
+    tocarFaixa();
     limparLegenda();
     this.cameras.main.fadeOut(1200, 0, 0, 0);
     await espera(1300);

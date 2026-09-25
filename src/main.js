@@ -5,11 +5,13 @@ import { Corrida } from './cenas/Corrida.js';
 import { Brejo } from './cenas/Brejo.js';
 import { Rio } from './cenas/Rio.js';
 import { prepararControles, entrada } from './ui.js';
+import { ouvirGestos } from './som.js';
 
 export const LARGURA = 1280;
 export const ALTURA = 720;
 
 prepararControles();
+ouvirGestos();
 
 
 const jogo = new Phaser.Game({

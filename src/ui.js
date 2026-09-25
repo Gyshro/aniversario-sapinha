@@ -5,7 +5,7 @@ const $ = (id) => document.getElementById(id);
 export function mostrar(id, sim = true) { $(id).hidden = !sim; }
 
 export function esconderTudo() {
-  for (const id of ['legenda', 'hud', 'posicao', 'controles', 'polaroid', 'fala', 'final', 'toque']) mostrar(id, false);
+  for (const id of ['legenda', 'hud', 'posicao', 'controles', 'polaroid', 'fala', 'final', 'toque', 'ovo']) mostrar(id, false);
 }
 
 // ---------- Narração ----------
@@ -138,4 +138,21 @@ export function telaFinal(html, { rever, jogar }) {
   mostrar('final');
   $('final-rever').onclick = () => { mostrar('final', false); rever(); };
   $('final-jogar').onclick = () => { mostrar('final', false); jogar(); };
+}
+
+// ---------- Easter egg do fim ----------
+// Só aparece se o GIF existir em public/assets/fotos/. Um toque fecha.
+export function easterEgg(arquivo) {
+  if (!arquivo) return;
+  const img = $('ovo-img');
+  img.onload = () => {
+    mostrar('ovo');
+    const fechar = () => { mostrar('ovo', false); window.removeEventListener('keydown', fechar); };
+    setTimeout(() => {
+      $('ovo').addEventListener('pointerdown', fechar, { once: true });
+      window.addEventListener('keydown', fechar);
+    }, 800);
+  };
+  img.onerror = () => {};
+  img.src = `assets/fotos/${arquivo}`;
 }

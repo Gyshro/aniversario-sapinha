@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 import { INTRO } from '../conteudo.js';
-import { destravarAudio, som, tocarMusica } from '../som.js';
+import { destravarAudio, som, tocarMusica, iniciarPiano, pararFaixa } from '../som.js';
 import { legenda, limparLegenda, esperarToque, espera, esconderTudo } from '../ui.js';
 import { escalaPara } from '../catalogo.js';
 import { vagalumesAmbiente, toqueNaTela } from '../efeitos.js';
@@ -28,6 +28,8 @@ export class Titulo extends Phaser.Scene {
     destravarAudio();
     telaCheia();
     som.sino();
+    pararFaixa(); // "jogar de novo": a música do fim dá lugar ao piano
+    iniciarPiano();
     tocarMusica(this, 'musica_corrida', { volume: 0.45 });
     limparLegenda();
 
