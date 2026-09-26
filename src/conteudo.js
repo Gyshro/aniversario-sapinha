@@ -91,7 +91,7 @@ Por favor, fique longe de sapos suspeitos querendo te beijar.
 Um beijo enorme e todo o nosso carinho,
 do seu ex-inimigo Arturo e usuário de ifunny Evan.`,
   },
-  { nome: 'Letícia', sprite: 'amigo_11', audio: null, texto: 'Mensagem da Letícia.' },
+  { nome: 'Letícia', sprite: 'amigo_11', audio: null, texto: 'Parabéns Princesa!!! Espero que seu dia seja lindo e abençoado, lhe desejo todas as coisas boas do mundo!!' },
   { nome: 'Zayn', sprite: 'amigo_12', audio: null, texto: 'feliz niver, tamo junto bochechão, te amo' },
   { nome: 'Maya', sprite: 'amigo_13', audio: null, texto: 'Parabens kengona veia' },
 ];
