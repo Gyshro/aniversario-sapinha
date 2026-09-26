@@ -6377,7 +6377,7 @@ Que esse novo ciclo venha cheio de luz, de sonhos bonitos e caminhos que te leve
 
 Que a vida te presenteie com momentos especiais, com amor, paz, conquistas e dias cada vez mais leves e ideais. E que tudo aquilo que hoje parece um sonho distante, se torne realidade no momento certo e de uma forma linda e radiante.
 
-Mesmo não sendo tão próximas, tenho muito carinho por ti e espero de coração que esse novo ano da tua vida seja maravilhoso.`},{nome:"Lulu",sprite:"amigo_8",audio:null,texto:"Mensagem da Lulu."},{nome:"Juno",sprite:"amigo_10",audio:null,texto:`Querida Arya,
+Mesmo não sendo tão próximas, tenho muito carinho por ti e espero de coração que esse novo ano da tua vida seja maravilhoso.`},{nome:"Lulu",sprite:"amigo_8",audio:null,texto:"FELIZ NÍVER, MINHA AMANTE SECRETA, MWWWAAAH."},{nome:"Juno",sprite:"amigo_10",audio:null,texto:`Querida Arya,
 
 Talvez não faça tanto tempo que nos conhecemos, mas parece que você já faz parte da nossa família há muito mais tempo do que podemos contar. Por isso, queríamos que você soubesse o quanto é especial para nós.
 
