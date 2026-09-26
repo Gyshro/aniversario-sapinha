@@ -25,7 +25,7 @@ export const BREJO = {
   fim: 'Agora o caminho é pelo rio.',
 };
 
-// Uma vitória-régia por lembrança. foto = null mostra só a moldura.
+// Uma vitória-régia com coroa por item (o texto e a foto não aparecem mais: só conta quantas).
 export const LEMBRANCAS = [
   { foto: null, frase: 'Lembrança 1: uma frase curta' },
   { foto: null, frase: 'Lembrança 2' },
@@ -37,7 +37,15 @@ export const LEMBRANCAS = [
 // sprite = nome da imagem do amigo em public/assets/sprites/ (sem extensão).
 // Enquanto não existir, aparece uma silhueta provisória.
 export const AMIGOS = [
-  { nome: 'Gi', sprite: 'amigo_1', audio: null, texto: 'Mensagem da Gi.\nPode ter várias linhas.' },
+  {
+    nome: 'Gi', sprite: 'amigo_1', audio: null, texto: `Sabe quando tem uma pessoa introvertida, quietinha no cantinho dela, e de repente “BOOOM”, chega uma extrovertida, muda tudo e simplesmente adota ela? Do nada? Foi exatamente assim que eu me senti com você lá no início de tudo. E eu fiquei tão, tão feliz quando isso aconteceu, quando a gente se conheceu. Aos pouquinhos, fomos conhecendo cada vez mais uma à outra, e eu tive o privilégio de descobrir a pessoa maravilhosa que você é.
+
+Você é tão inteligente que às vezes eu fico besta te admirando, sério. Eu poderia passar horas te escutando falar, porque quando é sobre algo que você ama, você fala com tanto amor, tanta convicção e tanto brilho que é impossível não querer ouvir. Eu admiro muito isso em você, assim como admiro tantas outras coisas.
+
+Obrigada por sempre me acolher, por levantar meu astral e por simplesmente ser você comigo. Você é muito, muito importante pra mim. Hoje é o seu aniversário e é um dia especialmente seu, mas eu espero que você nunca esqueça que merece ser celebrada, amada e lembrada do quanto é incrível em todos os outros dias também.
+
+Eu te admiro MUITO, Rai! Obrigada por ser minha melhor amiga. Eu te amo com todo o meu coração e sou muito feliz por ter você na minha vida. E nunca, nunca duvide do seu potencial, viu? Você é capaz de fazer TUDO aquilo que colocar nessa cabecinha. És genial, minha be! Feliz aniversário, minha tudoooo.`,
+  },
   {
     nome: 'Richard', sprite: 'amigo_2', audio: null, texto: `Feliz aniversário, Porrinha! 🥳
 
@@ -94,6 +102,7 @@ do seu ex-inimigo Arturo e usuário de ifunny Evan.`,
   { nome: 'Letícia', sprite: 'amigo_11', audio: null, texto: 'Parabéns Princesa!!! Espero que seu dia seja lindo e abençoado, lhe desejo todas as coisas boas do mundo!!' },
   { nome: 'Zayn', sprite: 'amigo_12', audio: null, texto: 'feliz niver, tamo junto bochechão, te amo' },
   { nome: 'Maya', sprite: 'amigo_13', audio: null, texto: 'Parabens kengona veia' },
+  { nome: 'Kael', sprite: 'amigo_14', audio: null, texto: 'PARABENS PRINCESA DO PAPAI!! PETECO PETECO PETECO EM TODOS QUE SE APROXIMAREM DE VOCÊ, PAPAI TE AMA!! ❤️' },
 ];
 
 // GIF surpresa que aparece no finalzinho, depois de tudo (public/assets/fotos/).

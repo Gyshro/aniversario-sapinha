@@ -18,6 +18,67 @@ export function texturaBrilho(cena) {
   return 'brilho';
 }
 
+// Coroa dourada desenhada na hora (as vitórias-régias do rio guardam uma cada).
+export function texturaCoroa(cena) {
+  if (cena.textures.exists('coroa_brilho')) return 'coroa_brilho';
+  const W = 128, H = 104;
+  const t = cena.textures.createCanvas('coroa_brilho', W, H);
+  const ctx = t.getContext();
+  // contorno: base + 5 pontas, a do meio mais alta
+  const forma = () => {
+    ctx.beginPath();
+    ctx.moveTo(14, 84);
+    ctx.lineTo(8, 34);
+    ctx.lineTo(36, 58);
+    ctx.lineTo(48, 22);
+    ctx.lineTo(64, 50);
+    ctx.lineTo(64, 50);
+    ctx.lineTo(80, 22);
+    ctx.lineTo(92, 58);
+    ctx.lineTo(120, 34);
+    ctx.lineTo(114, 84);
+    ctx.closePath();
+  };
+  ctx.lineJoin = 'round';
+  const ouro = ctx.createLinearGradient(0, 18, 0, 90);
+  ouro.addColorStop(0, '#fff3b0');
+  ouro.addColorStop(0.35, '#f6cf4f');
+  ouro.addColorStop(1, '#c98a1c');
+  forma();
+  ctx.fillStyle = ouro;
+  ctx.fill();
+  ctx.lineWidth = 4;
+  ctx.strokeStyle = '#8a5a12';
+  ctx.stroke();
+  // faixa da base
+  ctx.fillStyle = '#e0a92c';
+  ctx.strokeStyle = '#8a5a12';
+  ctx.lineWidth = 3;
+  ctx.fillRect(12, 74, 104, 16);
+  ctx.strokeRect(12, 74, 104, 16);
+  // pérolas nas pontas
+  for (const [x, y] of [[8, 32], [48, 20], [80, 20], [120, 32]]) {
+    ctx.beginPath(); ctx.arc(x, y, 6, 0, Math.PI * 2);
+    ctx.fillStyle = '#fffbe8'; ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = '#8a5a12'; ctx.stroke();
+  }
+  // joias: coral no meio, esmeraldas dos lados
+  const joia = (x, y, r, cor) => {
+    ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fillStyle = cor; ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = '#6b3f0c'; ctx.stroke();
+    ctx.beginPath(); ctx.arc(x - r * 0.35, y - r * 0.35, r * 0.3, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(255,255,255,.8)'; ctx.fill();
+  };
+  joia(64, 82, 8, '#e0604f');
+  joia(32, 82, 5, '#2fa36b');
+  joia(96, 82, 5, '#2fa36b');
+  // reflexo
+  ctx.strokeStyle = 'rgba(255,255,255,.7)';
+  ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(20, 66); ctx.lineTo(17, 44); ctx.stroke();
+  t.refresh();
+  return 'coroa_brilho';
+}
+
 // Vagalumes soltos pela tela, presos à câmera.
 export function vagalumesAmbiente(cena, n = 20, { fixo = true, area = null } = {}) {
   const chave = texturaBrilho(cena);

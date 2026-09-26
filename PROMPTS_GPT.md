@@ -190,6 +190,11 @@ Two versions of the same character side by side, in 2 equal cells, no line betwe
 Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. A cute friendly alligator character in the same hand-painted storybook style as the attached scene: a chubby swamp alligator standing upright on its hind legs like a person, olive and moss green bumpy back with a soft pale yellow belly, a long rounded snout with a big goofy happy grin showing small rounded teeth, big warm amber eyes, little rosy cheeks, short stubby arms and a thick curling tail behind. Adorable and huggable, a gentle bayou friend, not scary, no water. Full body, 3/4 view facing left. Left cell: standing upright, big happy grin. Right cell: the same alligator waving one little claw. Same size and position in both cells.
 ```
 
+### D2 · `amigo_14.png` · **Kael** (25/09) — [anexar estilo_amigos.png + o print do avatar]
+```
+Two versions of the same character side by side, in 2 equal cells, no line between them, solid flat magenta #FF00FF background, no shadow. Reinterpret the pixel-art avatar in the attached screenshot as a character in the same hand-painted storybook style as the attached scene: a young man with warm medium-brown skin, short straight black hair in a neat bowl cut with a straight fringe over the forehead, calm half-lidded eyes and a relaxed, slightly shy expression, wearing a blue button-up jacket with a small stand collar and little gold buttons over a darker navy top, a thin silver bracelet on one wrist, loose dark navy jeans and dark grey sneakers. Chill and friendly. Full body, 3/4 view facing left. Left cell: standing relaxed, hands at his sides, soft smile. Right cell: the same character waving. Same size and position in both cells.
+```
+
 ---
 
 ## Música (opcional)

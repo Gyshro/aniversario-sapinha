@@ -2,9 +2,9 @@ import Phaser from 'phaser';
 import { LEMBRANCAS, AMIGOS, FINAL, EASTER_EGG } from '../conteudo.js';
 import { jornada } from '../jornada.js';
 import { som, tocarMusica } from '../som.js';
-import { legenda, limparLegenda, espera, esconderTudo, polaroid, fala, telaFinal, easterEgg } from '../ui.js';
+import { legenda, limparLegenda, espera, esconderTudo, fala, telaFinal, easterEgg } from '../ui.js';
 import { escalaPara, QUADRO } from '../catalogo.js';
-import { parallax, clarao, estouro, texturaBrilho, toqueNaTela, vagalumesAmbiente, movimentoReduzido } from '../efeitos.js';
+import { parallax, clarao, estouro, texturaBrilho, texturaCoroa, toqueNaTela, vagalumesAmbiente, movimentoReduzido } from '../efeitos.js';
 
 const PASSO = 390;          // distância entre vitórias-régias
 const Y_FOLHA = 585;
@@ -62,12 +62,24 @@ export class Rio extends Phaser.Scene {
       if (f.ultima) f.img.setScale(f.img.scale * 1.25);
       this.tweens.add({ targets: f.img, y: Y_FOLHA + 3, duration: 1800 + i * 90, yoyo: true, repeat: -1, ease: 'Sine.inOut' });
       if (f.lembranca) {
-        const brilho = this.add.image(f.x, Y_FOLHA - 95, texturaBrilho(this)).setBlendMode(Phaser.BlendModes.ADD).setScale(2.2).setAlpha(0.35).setDepth(11);
-        const moldura = this.add.image(f.x, Y_FOLHA - 95, 'itens', QUADRO.itens.polaroid).setDepth(12);
-        moldura.setScale(escalaPara(this, 'itens', 64));
-        this.tweens.add({ targets: [moldura, brilho], y: Y_FOLHA - 110, duration: 1500, yoyo: true, repeat: -1, ease: 'Sine.inOut' });
-        this.tweens.add({ targets: brilho, alpha: 0.6, duration: 1100, yoyo: true, repeat: -1 });
-        f.moldura = moldura;
+        // uma coroa brilhando sobre a folha, esperando ser pega
+        const brilho = this.add.image(f.x, Y_FOLHA - 100, texturaBrilho(this)).setBlendMode(Phaser.BlendModes.ADD).setScale(2.6).setAlpha(0.45).setDepth(11);
+        const coroa = this.add.image(f.x, Y_FOLHA - 100, texturaCoroa(this)).setDepth(12);
+        coroa.setScale(58 / coroa.height);
+        this.tweens.add({ targets: [coroa, brilho], y: Y_FOLHA - 116, duration: 1500, yoyo: true, repeat: -1, ease: 'Sine.inOut' });
+        this.tweens.add({ targets: coroa, angle: { from: -6, to: 6 }, duration: 1900, yoyo: true, repeat: -1, ease: 'Sine.inOut' });
+        this.tweens.add({ targets: brilho, alpha: 0.8, scale: 3.1, duration: 1100, yoyo: true, repeat: -1 });
+        // faísca de vez em quando
+        this.time.addEvent({
+          delay: 700 + i * 60, loop: true,
+          callback: () => {
+            if (!coroa.active || !coroa.visible) return;
+            const s = this.add.image(coroa.x + Phaser.Math.Between(-26, 26), coroa.y + Phaser.Math.Between(-20, 14), texturaBrilho(this))
+              .setBlendMode(Phaser.BlendModes.ADD).setScale(0.05).setDepth(13);
+            this.tweens.add({ targets: s, scale: 0.32, alpha: 0, duration: 520, ease: 'Quad.out', onComplete: () => s.destroy() });
+          },
+        });
+        f.coroa = coroa;
         f.brilho = brilho;
       }
     });
@@ -194,7 +206,7 @@ export class Rio extends Phaser.Scene {
     await espera(160);
     h.setFrame(QUADRO.sapinha.parada);
 
-    if (folha.lembranca) await this.abrirLembranca(folha);
+    if (folha.coroa) this.pegarCoroa(folha);
     if (folha.ultima) return this.revelarAmigos();
     this.pulando = false;
   }
@@ -204,17 +216,27 @@ export class Rio extends Phaser.Scene {
     this.tweens.add({ targets: g, scaleX: 4, scaleY: 3, alpha: 0, duration: 1100, ease: 'Expo.out', onComplete: () => g.destroy() });
   }
 
-  async abrirLembranca(folha) {
-    this.livre = false;
+  // a coroa dá um brilho, voa até a cabeça dela e vira vagalumes (que viram a coroa do final)
+  pegarCoroa(folha) {
+    const { coroa, brilho } = folha;
+    folha.coroa = null;
+    this.tweens.killTweensOf([coroa, brilho]);
     som.sino();
-    this.tweens.add({ targets: [folha.moldura, folha.brilho], alpha: 0, scale: 0, duration: 400 });
-    await espera(300);
-    await polaroid(folha.lembranca);
-    // cada lembrança vira luz que se junta ao enxame
-    for (let i = 0; i < 3; i++) this.addVagalume(folha.x + Phaser.Math.Between(-30, 30), Y_FOLHA - 110);
-    estouro(this, folha.x, Y_FOLHA - 110, { n: 8, raio: 60, escala: 0.35 });
-    som.vagalume();
-    this.livre = true;
+    estouro(this, coroa.x, coroa.y, { n: 10, raio: 70, escala: 0.35 });
+    this.tweens.add({ targets: brilho, alpha: 0, scale: 5, duration: 500, onComplete: () => brilho.destroy() });
+    this.tweens.add({
+      targets: coroa, scale: coroa.scale * 1.5, angle: 0, duration: 260, ease: 'Back.out',
+      onComplete: () => this.tweens.add({
+        targets: coroa, x: this.heroi.x, y: this.heroi.y - this.heroi.displayHeight * 0.9, scale: coroa.scale * 0.35, alpha: 0.2,
+        duration: 480, ease: 'Quad.in',
+        onComplete: () => {
+          estouro(this, coroa.x, coroa.y, { n: 8, raio: 50, escala: 0.3 });
+          for (let i = 0; i < 3; i++) this.addVagalume(coroa.x + Phaser.Math.Between(-20, 20), coroa.y);
+          som.vagalume();
+          coroa.destroy();
+        },
+      }),
+    });
   }
 
   // ---------- Os amigos ----------
