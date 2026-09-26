@@ -77,6 +77,12 @@
       "larguraQuadro": 250,
       "alturaQuadro": 256,
       "quadros": 2
+    },
+    "amigo_14": {
+      "arquivo": "sprites/amigo_14.webp",
+      "larguraQuadro": 126,
+      "alturaQuadro": 256,
+      "quadros": 2
     }
   },
   "fundos": {},
