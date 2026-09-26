@@ -82,7 +82,7 @@ Que a vida te presenteie com momentos especiais, com amor, paz, conquistas e dia
 
 Mesmo não sendo tão próximas, tenho muito carinho por ti e espero de coração que esse novo ano da tua vida seja maravilhoso.`,
   },
-  { nome: 'Lulu', sprite: 'amigo_8', audio: null, texto: 'Mensagem da Lulu.' },
+  { nome: 'Lulu', sprite: 'amigo_8', audio: null, texto: 'FELIZ NÍVER, MINHA AMANTE SECRETA, MWWWAAAH.' },
   // Juno e Venecas escreveram juntos: a mensagem começa num e termina no outro.
   {
     nome: 'Juno', sprite: 'amigo_10', audio: null, texto: `Querida Arya,
